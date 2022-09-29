@@ -15,10 +15,10 @@ app.options('*',cors())
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
-const registerRoute = require('../routes/register')
+const registerRoute = require('./routes/register')
 app.use('/register',registerRoute)
 
-const recordsRoute = require('../routes/records')
+const recordsRoute = require('./routes/records')
 app.use('/records',recordsRoute)
 
 app.listen( process.env.PORT || 1337, ()=>{
