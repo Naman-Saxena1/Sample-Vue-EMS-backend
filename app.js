@@ -24,3 +24,7 @@ app.use('/records',recordsRoute)
 app.listen( process.env.PORT || 1337, ()=>{
     console.log("Server started at port 1337!")
 })
+
+// var listener = app.listen(1337, function(){
+//     console.log('Listening on port ' + listener.address().port); //Listening on port 8888
+// });
